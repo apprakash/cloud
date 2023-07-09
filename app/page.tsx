@@ -1,9 +1,13 @@
-import Image from "next/image";
+"use client"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPlay } from "@fortawesome/free-solid-svg-icons"
+
 
 export default function Home() {
   return (
-    <div>
-      <h2>This Page Works!</h2>
-    </div>
-  );
+  <div>
+    <FontAwesomeIcon icon={faPlay} className="mr-2" />
+  </div>
+  ); 
 }
