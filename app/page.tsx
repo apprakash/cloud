@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const handleclick = () => {
   console.log("clicked");
   if (window) {
@@ -18,6 +20,9 @@ export default function Home() {
       >
         Connect with Stripe
       </button>
+      <Link href="/onboarding">
+        <button>Onboarding</button>
+      </Link>
     </div>
   );
 }

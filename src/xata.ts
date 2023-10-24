@@ -250,7 +250,10 @@ const tables = [
   },
   {
     name: "ConnectedAccounts",
-    columns: [{ name: "Connected_AccountId", type: "string" }],
+    columns: [
+      { name: "AuthDetails", type: "json" },
+      { name: "AccountDetails", type: "json" },
+    ],
   },
 ] as const;
 
